@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tebak Kata Game JavaScript | naillllll </title>
+    <link rel="stylesheet" href="stylegame.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="wrapper">
+      <script>
+        var nama = prompt("Masukan Nama")
+        document.write("<h1> Hallo, " + nama + "<h1>" )
+      </script>
+
+      <h1>Tebak Kata</h1>
+      <div class="content">
+        <input type="text" class="typing-input" maxlength="1">
+        <div class="inputs"></div>
+        <div class="details">
+          <p class="hint">Petunjuk : <span></span></p>
+          <p class="guess-left">Tebakan Yang Tersisa: <span></span></p>
+          <p class="wrong-letter">Huruf Salah: <span></span></p>
+        </div>
+        <button class="reset-btn">Next</button>
+        
+
+        <div class="next">
+          <div class="slider-button">
+            <a href="game2.html">
+              <button class="slider-button slinder-button-prev" onclick="prevslide()">Next Level</button>
+            </a>
+          </div>
+        </div>
+      
+        
+      </div>
+    </div>
+
+
+    <script src="word.js"></script>
+    <script src="script.js"></script>
+    
+  </body>
+</html>
